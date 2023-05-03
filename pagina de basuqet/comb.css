@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2? family=Bebas+Neue&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Bebas Neue', cursive;
+
+}
+h1{font-size: 5em;}
+h2{font-size: 2.1em;}
+h3{font-size: 1,2em;}
+p{font-size: 3em}
+
+.cont{
+    display: flex;
+    padding: 12px;
+    justify-content:initial;
+}
+.cont2{
+    display: flex;
+    padding: 12px;
+    justify-content:center;
+}
+.cont3{
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    width: 1490px;
+    position: relative;
+    bottom: 190px;
+    text-align: center;
+    width: 100%;
+    left: -420px;
+}
+.superior-band{
+    bottom: 12px;
+    position: relative;
+    height: 15px;
+    width: 120px;
+    background-color: rgb(199, 86, 10);
+    animation-name: banda-move;
+    animation-duration: 4s;
+    transition: ease-in;
+    animation-fill-mode:forwards ;
+}  
+@keyframes banda-move {
+    0%{ animation-composition: ease-in;}
+    25%{transform: translateX(170px);}
+    75%{transform: translateX(0px);}
+    85%{
+    animation-fill-mode:forwards;
+        transform: scaleY(3);
+      
+    }
+    100%{
+        background-color: rgb(255, 255, 255);
+        transform: scaleX(30);
+     }
+    }
+    .bas1{
+        padding: 10px;
+        position: relative;
+        right: 120px;
+        color: rgba(255, 255, 255, 0.281);
+        animation-name: h1-move;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+
+    }
+    @keyframes h1-move{
+        100%{color: rgb(255, 255, 255);}
+    }
+    .menu{
+        margin: 0%;
+        padding: 0%;
+        position: relative;
+        left: 50%;
+        top: 12px;
+        font-size: 4em;
+        color:rgb(255, 225, 187);
+    }
+    .menu:hover{
+        position: absolute;
+        margin: 0%;
+        transition: ease-in,1s;
+        color: rgb(247, 159, 45);
+        cursor: pointer;
+        transition-delay: 2s;
+        width: 12px;
+        height: 180px;
+        background-color: rgb(255, 255, 255);
+        z-index: 5;
+    }
+    .fond{
+        margin: 0%;
+        position: relative;
+        bottom: 270px;
+        background-color: black;
+        height: 700px;
+        width: 10000px;
+        z-index: -10;
+        background-image:linear-gradient(to bottom, rgba(22, 22, 22, 0.397), rgba(235, 103, 37, 0.658)),
+            url("/Captura\ de\ pantalla\ 2023-05-02\ 185911.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        background-attachment: fixed;
+        background-size: cover;
+        opacity: 1;
+        animation-name: fond-animation;
+        animation-fill-mode: forwards;
+        animation-duration: 10s;
+        border-radius: 15px;
+    }
+ @keyframes fond-animation {
+        0%{ opacity: 0.8; }
+        50%{opacity: 1;}
+        100%{opacity: 20;
+            transform:translateY(-2);}
+    }
+    .Boton{
+        margin: 0%;
+        bottom: 40px;
+        position: absolute;
+        z-index: 2;
+        height: 120px;
+        width: 300px;
+        border-radius: 20px;
+        font-size: 3em;
+        background-color:rgb(255, 110, 26);
+        color: rgb(255, 255, 255);
+        transition: ease-out,1s;
+    }
+    .Boton:hover{
+        background-color: rgb(0, 0, 0);
+        color: aliceblue;
+    }
+    .Boton:active{
+        background-color: rgb(255, 255, 255);
+        color: black;
+    }
+    .b2{
+        display: flex;
+        position:absolute;
+        color: white;
+        font-size: 4em;
+        top:420px;animation-name: text-apa;
+        animation-fill-mode: forwards;
+        animation-duration: 3s;
+        opacity: 0%;  
+        animation-delay: 1s;
+    }
+@keyframes text-apa {
+    30%{
+        opacity: 100%;
+    }
+    100%{
+        opacity: 0%;
+    }
+}
+
+    .b3{
+        display: flex;
+        position:absolute;
+        color: white;
+        font-size: 4em;
+        top:420px;
+        animation-name: text-apa1;
+        top:420px;animation-name: text-apa;
+        animation-fill-mode: forwards;
+        animation-duration: 3s;
+        animation-delay: 5s;
+        opacity: 0%;
+    }
+@keyframes text-apa1 {
+            30%{  opacity: 100%;}
+            100%{opacity: 0%;}
+    }
+    .b4{
+        display: flex;
+        position:absolute;
+        color: white;
+        font-size: 4em;
+        top:420px;
+        opacity: 0%;
+        animation-duration: 5s;
+        animation-delay: 8s;
+        animation-fill-mode:forwards;
+        animation-name: text-apa3;
+        animation-iteration-count: infinite;
+    }
+@keyframes text-apa3{
+        10%{opacity: 100%;}
+        65%{opacity: 0%;}
+        100%{opacity: 100%;}
+    }
+    .Raya{
+        height: 120px;
+        width: 12px;
+        background-color: rgb(211, 102, 0);
+        position: relative;
+        left: 365px;
+        animation-name: raya-nimate;
+        animation-duration: 3s;
+        animation-delay: 2s;
+        animation-iteration-count: infinite;
+        border-radius: 5px;
+    }
+    @keyframes raya-nimate {
+        0%{transform: scaleY(0);}
+        75%{transform: scaleY(1);}
+        100%{transform: scaleY(0);}        
+    }
+    .jugador1{
+        margin: 12px;
+        position: relative;
+        width: 300px;
+        height: 600px;
+        background-color: black;
+        border-radius: 18px;
+        left: 545px;
+        background-image:linear-gradient(to bottom, rgba(22, 22, 22, 0.397), rgba(235, 103, 37, 0.658)),
+        url("/2.bild.jpg");
+        background-position-x: center;
+        color: aliceblue;
+        font-size: 3em;
+
+
+    }
+    .jugador2{
+        margin: 12px;
+        position: relative;
+        width: 300px;
+        height: 600px;
+        background-color: black;
+        border-radius: 18px;
+        left: 560px;
+        background-image:linear-gradient(to bottom, rgba(22, 22, 22, 0.397), rgba(235, 103, 37, 0.658)),
+        url("/OIP.jpg");
+        
+        font-size: 3em;color: aliceblue;
+
+    }
+
+
+
+
+
+
+    .edit{
+        position: relative;
+        left: 400px;
+    }
